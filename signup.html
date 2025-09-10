@@ -2,27 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
     body {
       background: linear-gradient(#ececec, #f6f6f6);
       min-height: 100vh;
-      display: flex;
       align-items: center;
       justify-content: center;
       font-family: system-ui, Arial, sans-serif;
     }
 
+    .navbar-brand {
+      background-color: #ffe939;
+    }
+
     .signup-card {
       width: 100%;
       max-width: 420px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
       border-radius: 6px;
+      margin-left: 700px;
+      margin-top: 150px;
     }
 
     .signup-header {
@@ -33,7 +38,9 @@
       margin-bottom: 10px;
     }
 
-    .form-card-body { padding: 20px; }
+    .form-card-body {
+      padding: 20px;
+    }
 
     .btn-signup {
       background-color: #007bff;
@@ -41,30 +48,61 @@
       color: white;
       font-weight: 600;
     }
-    .btn-signup:active, .btn-signup:focus { box-shadow: none; }
 
-    .small-link { 
-      font-size: 0.95rem; 
-      color: black; 
+    .btn-signup:active,
+    .btn-signup:focus {
+      box-shadow: none;
+    }
+
+    .small-link {
+      font-size: 0.95rem;
+      color: black;
       text-align: center;
     }
 
-    .input-icon svg { 
-      opacity: .65; 
+    .input-icon svg {
+      opacity: .65;
     }
 
     .text-decoration-none {
       color: black;
     }
+
     .condition {
       text-decoration: none;
       color: black;
+    }
+
+    button {
+      border: none;
     }
   </style>
 </head>
 
 <body>
-      <div class="card signup-card">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="index.html">ShowTrackr</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add.html">Add</a>
+          </li>
+        </ul>
+        <a href="login.html"><button type="submit">Login</button></a>
+        <a href="signup.html"><button type="submit">Signup</button></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="card signup-card">
     <div class="card-body">
       <div class="signup-header">Sign up</div>
 
@@ -74,9 +112,10 @@
           <div class="input-group">
             <span class="input-group-text">
               <!-- person icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                <path fill-rule="evenodd" d="M8 9a5 5 0 0 0-5 5v1h10v-1a5 5 0 0 0-5-5z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person"
+                viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                <path fill-rule="evenodd" d="M8 9a5 5 0 0 0-5 5v1h10v-1a5 5 0 0 0-5-5z" />
               </svg>
             </span>
             <input type="text" class="form-control" id="name" placeholder="Name" required>
@@ -96,8 +135,10 @@
           <div class="input-group">
             <span class="input-group-text">
               <!-- key icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
-                <path d="M3 9a4 4 0 1 1 7.32 2.09l3.396 3.396a1 1 0 0 1-1.414 1.414l-.793-.793-.793.793a1 1 0 0 1-1.414-1.414l.793-.793-.793-.793A4 4 0 0 1 3 9zm4-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-key"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3 9a4 4 0 1 1 7.32 2.09l3.396 3.396a1 1 0 0 1-1.414 1.414l-.793-.793-.793.793a1 1 0 0 1-1.414-1.414l.793-.793-.793-.793A4 4 0 0 1 3 9zm4-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
               </svg>
             </span>
             <input type="password" class="form-control" id="password" placeholder="Password" required>
@@ -106,7 +147,9 @@
 
         <!-- Terms -->
         <div class="mb-3 small-link">
-          By signing up, you agree to our <a href="#" class="text-decoration-none"><b class="condition">terms & conditions</b></a> and <a href="#" class="text-decoration-none"><b class="condition">privacy policy</b></a>.
+          By signing up, you agree to our <a href="#" class="text-decoration-none"><b class="condition">terms &
+              conditions</b></a> and <a href="#" class="text-decoration-none"><b class="condition">privacy
+              policy</b></a>.
         </div>
 
         <!-- Signup button -->
@@ -120,10 +163,10 @@
       </div>
     </div>
   </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="js/signup.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="js/signup.js"></script>
 </body>
 
 </html>
