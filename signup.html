@@ -43,9 +43,23 @@
     }
     .btn-signup:active, .btn-signup:focus { box-shadow: none; }
 
-    .small-link { font-size: 0.95rem; color: #666; }
+    .small-link { 
+      font-size: 0.95rem; 
+      color: black; 
+      text-align: center;
+    }
 
-    .input-icon svg { opacity: .65; }
+    .input-icon svg { 
+      opacity: .65; 
+    }
+
+    .text-decoration-none {
+      color: black;
+    }
+    .condition {
+      text-decoration: none;
+      color: black;
+    }
   </style>
 </head>
 
@@ -92,7 +106,7 @@
 
         <!-- Terms -->
         <div class="mb-3 small-link">
-          By signing up, you agree to our <a href="#">terms & conditions</a> and <a href="#">privacy policy</a>.
+          By signing up, you agree to our <a href="#" class="text-decoration-none"><b class="condition">terms & conditions</b></a> and <a href="#" class="text-decoration-none"><b class="condition">privacy policy</b></a>.
         </div>
 
         <!-- Signup button -->
@@ -101,7 +115,7 @@
         </div>
 
         <div class="text-center mb-2 small-link">
-          Already have an account? <a href="login.html" class="text-decoration-underline">Log in now</a>
+          Already have an account? <a href="login.html" class="text-decoration-none"><b>Log in now</b></a>
         </div>
       </div>
     </div>

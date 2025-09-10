@@ -69,17 +69,22 @@
         .or-divider {
             text-align: center;
             margin: 14px 0;
-            color: #777;
+            color: black;
             font-size: 0.95rem;
         }
 
         .small-link {
             font-size: 0.95rem;
-            color: #666;
+            color: black;
+            text-decoration: none;
         }
 
         .input-icon svg {
             opacity: .55;
+        }
+
+        .text-decoration-none {
+            color: black;
         }
     </style>
 </head>
@@ -91,7 +96,6 @@
             <div class="login-header">Log in</div>
 
             <div class="form-card-body">
-                <!-- Email field with @ icon -->
                 <div class="mb-3">
                     <div class="input-group">
                         <span class="input-group-text">@</span>
@@ -99,11 +103,9 @@
                     </div>
                 </div>
 
-                <!-- Password field with key icon -->
                 <div class="mb-3">
                     <div class="input-group">
                         <span class="input-group-text">
-                            <!-- Bootstrap key icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                                 class="bi bi-key" viewBox="0 0 16 16">
                                 <path
@@ -114,25 +116,22 @@
                     </div>
                 </div>
 
-                <!-- Login button -->
                 <div class="d-grid mb-3">
                     <button class="btn btn-login btn-lg" id="btnLogin" type="button">Log in</button>
                 </div>
 
                 <div class="text-center mb-2">
-                    <a href="#" class="small-link">Forgot your password?</a>
+                    <a href="#" class="small-link"><b>Forgot your password?</b></a>
                 </div>
 
                 <div class="text-center mb-2 small-link">
-                    Don't have an account? <a href="signup.html" class="text-decoration-underline">Sign up</a>
+                    Don't have an account? <a href="signup.html" class="text-decoration-none"><b>Sign up</b></a>
                 </div>
 
-                <div class="or-divider">or</div>
+                <div class="or-divider"><b><hr>or</hr></b></div>
 
-                <!-- Social buttons -->
                 <div class="d-grid gap-2">
                     <button class="btn social-btn facebook" type="button">
-                        <!-- Facebook small icon + text -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2"
                             viewBox="0 0 16 16">
                             <path
@@ -142,7 +141,6 @@
                     </button>
 
                     <button class="btn social-btn google" type="button">
-                        <!-- Google icon + text -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2"
                             viewBox="0 0 48 48">
                             <path
