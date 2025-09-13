@@ -5,78 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signup Page</title>
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <style>
-    body {
-      background: linear-gradient(#ececec, #f6f6f6);
-      min-height: 100vh;
-      align-items: center;
-      justify-content: center;
-      font-family: system-ui, Arial, sans-serif;
-    }
-
-    .navbar-brand {
-      background-color: #ffe939;
-    }
-
-    .signup-card {
-      width: 100%;
-      max-width: 420px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-      border-radius: 6px;
-      margin-left: 700px;
-      margin-top: 150px;
-    }
-
-    .signup-header {
-      font-weight: 800;
-      font-size: 2rem;
-      text-align: center;
-      margin-top: 15px;
-      margin-bottom: 10px;
-    }
-
-    .form-card-body {
-      padding: 20px;
-    }
-
-    .btn-signup {
-      background-color: #007bff;
-      border-color: #007bff;
-      color: white;
-      font-weight: 600;
-    }
-
-    .btn-signup:active,
-    .btn-signup:focus {
-      box-shadow: none;
-    }
-
-    .small-link {
-      font-size: 0.95rem;
-      color: black;
-      text-align: center;
-    }
-
-    .input-icon svg {
-      opacity: .65;
-    }
-
-    .text-decoration-none {
-      color: black;
-    }
-
-    .condition {
-      text-decoration: none;
-      color: black;
-    }
-
-    button {
-      border: none;
-    }
-  </style>
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 
 <body>
@@ -102,11 +33,11 @@
       </div>
     </div>
   </nav>
-  <div class="card signup-card">
+  <div class="card signup-form">
     <div class="card-body">
       <div class="signup-header">Sign up</div>
 
-      <div class="form-card-body">
+      <div class="form-card-body" id="signupForm">
         <!-- Name -->
         <div class="mb-3">
           <div class="input-group">
@@ -120,6 +51,7 @@
             </span>
             <input type="text" class="form-control" id="name" placeholder="Name" required>
           </div>
+          <div class="error" id="nameError"></div>
         </div>
 
         <!-- Email -->
@@ -128,6 +60,7 @@
             <span class="input-group-text">@</span>
             <input type="email" class="form-control" id="email" placeholder="Email" required>
           </div>
+          <div class="error" id="emailError"></div>
         </div>
 
         <!-- Password -->
@@ -143,6 +76,7 @@
             </span>
             <input type="password" class="form-control" id="password" placeholder="Password" required>
           </div>
+          <div class="error" id="passwordError"></div>
         </div>
 
         <!-- Terms -->
@@ -154,7 +88,7 @@
 
         <!-- Signup button -->
         <div class="d-grid mb-3">
-          <button class="btn btn-signup btn-lg" id="btnSignup" type="button">Sign up</button>
+          <button class="btn btn-signup btn-lg" id="btnSignup" type="submit">Sign up</button>
         </div>
 
         <div class="text-center mb-2 small-link">

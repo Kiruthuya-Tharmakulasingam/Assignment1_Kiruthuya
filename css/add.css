@@ -1,0 +1,68 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  background-color: #ffe939;
+}
+
+.navbar-name {
+  text-decoration: none;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  border: none;
+}
+
+body {
+  background-color: #e4e7ec;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  height: 220px;
+  width: 90%;
+  margin-top: 50px;
+  margin-left: 80px;
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.315);
+}
+
+.card-head {
+  font-weight: bold;
+  background-color: #f6f6f6;
+  margin-bottom: -40px;
+}
+
+.name {
+  font-weight: 600;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: large;
+}
+
+.add-name {
+  width: 200%;
+  margin-bottom: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.274);
+}
+
+.add-btn {
+  background-color: #6ba9f7;
+  color: white;
+  margin-top: 05px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  border: none;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 1px;
+  display: none;
+}

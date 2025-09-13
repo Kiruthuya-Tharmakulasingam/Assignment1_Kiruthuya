@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(#ececec, #f6f6f6);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, "Segoe UI", "Helvetica Neue", Arial;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  margin-left: 700px;
+  margin-top: 150px;
+}
+
+.navbar-brand {
+  background-color: #ffe939;
+}
+
+.login-header {
+  font-weight: 800;
+  font-size: 2.1rem;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+.form-card-body {
+  padding: 22px;
+}
+
+.btn-login {
+  background-color: #3bb34a;
+  border-color: #3bb34a;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-login:active,
+.btn-login:focus {
+  box-shadow: none;
+}
+
+.social-btn {
+  height: 44px;
+  font-weight: 600;
+}
+
+.facebook {
+  background: #1b4f9a;
+  color: white;
+  border: none;
+}
+
+.google {
+  background: #d9534f;
+  color: white;
+  border: none;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 14px 0;
+  color: black;
+  font-size: 0.95rem;
+}
+
+.small-link {
+  font-size: 0.95rem;
+  color: black;
+  text-decoration: none;
+}
+
+.input-icon svg {
+  opacity: 0.55;
+}
+
+.text-decoration-none {
+  color: black;
+}
+
+button {
+  border: none;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 3px;
+  display: none;
+}
